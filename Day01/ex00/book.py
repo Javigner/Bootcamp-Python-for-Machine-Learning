@@ -19,3 +19,6 @@ class Book:
             for key, element in recipes_list.items():
                 if key != 'starter' and key != 'lunch' and key != 'dessert':
                     sys.exit("Recipe list Keys must be starter, lunch or dessert")
+            self.recipes_list = recipes_list
+        else:
+            sys.exit("recipes list must be a dictionnary")
